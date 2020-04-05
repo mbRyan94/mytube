@@ -1,5 +1,9 @@
 const express = require("express");
 const db = require("./src/db/sequelize");
+const dotenv = require("dotenv");
+
+dotenv.config();
+const PORT = process.env.PORT;
 
 db.authenticate()
   .then((err) => {
@@ -11,8 +15,7 @@ db.authenticate()
 
 const app = express();
 
-const PORT = process.env.PORT || 5000;
-
+console.log(process.env.NODE_ENV);
 app.get("/", (req, res) => {
   return res.json({
     message: "test route works",

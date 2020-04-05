@@ -10,6 +10,7 @@
   "author": "Mike Schertl",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.2",
     "pg": "^8.0.0",

@@ -1,3 +1,4 @@
 const Sequelize = require("sequelize");
+const dotenv = require("dotenv").config();
 
-module.exports = new Sequelize("postgres://postgres@localhost:5432/mytube");
+module.exports = new Sequelize(process.env.DB_URI);
