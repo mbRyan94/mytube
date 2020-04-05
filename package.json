@@ -1,0 +1,19 @@
+{
+  "name": "mytube",
+  "version": "1.0.0",
+  "description": "MyTube is a web app which only displays the channels and videos I really want to watch without any potential distractions by video recommendations. #lessProcastinationTube",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "Mike Schertl",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "pg": "^8.0.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.6"
+  }
+}
